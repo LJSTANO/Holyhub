@@ -12,6 +12,7 @@ class Credentials:
     consumer_secret = '5YXGIocBCbvmr1jD71zDmqeWTPgUQyDKnyS6JKOqABl1sdGnWANaMjrSGcWnVmWr'  # Your Consumer Secret
     api_url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'  # API URL for sandbox
     shortcode = '174379'  # Your shortcode
+    
     passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'  # Your passkey
 
 # AccessToken class to get the token

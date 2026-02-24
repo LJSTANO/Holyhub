@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-dcy_&rn=5e44_%vv5iyea5o_ik@imicw8%q+v_v^860r@h*p%s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -140,6 +140,8 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -160,7 +162,7 @@ EMAIL_HOST_PASSWORD = 'gboz xuav vefa fqen'
 
 
 AFRICASTALKING_USERNAME = 'sandbox'  # Replace with your Africa's Talking username
-AFRICASTALKING_API_KEY = 'atsk_cc958b0a711db08bc5c73db4a9f7e24429ad2339007c32f952af3e0d8a52e748f105aeaa'    # Replace with your Africa's Talking API key
+AFRICASTALKING_API_KEY = 'atsk_787211de54333d6913c35ba64102a42d6809890cca2b039438ec3b7ab86966d0eeec7a9c'    # Replace with your Africa's Talking API key
 
 # settings.py
 

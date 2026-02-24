@@ -7,7 +7,7 @@ from .forms import NewsletterForm
 
 
 def send_newsletter(request):
-    if request.user.is_staff:  # Ensure only blog can access
+    if request.user.is_staff:
         if request.method == 'POST':
             form = NewsletterForm(request.POST)
             if form.is_valid():
