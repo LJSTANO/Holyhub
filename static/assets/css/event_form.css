@@ -81,3 +81,14 @@ input:focus, textarea:focus, select:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 122, 204, 0.5); /* Subtle glow */
 }
+.show-password {
+    margin-left: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.show-password input {
+    margin-right: 5px;
+}
+

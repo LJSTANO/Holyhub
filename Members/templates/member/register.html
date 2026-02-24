@@ -1,11 +1,12 @@
 {% extends "member/base.html" %}
 {% load static %}
 
-{% block title %}Believe - Register{% endblock title %}
+{% block title %}HolyHub - Register{% endblock title %}
 {% block style %}
 <link rel="stylesheet" href="{% static 'assets/css/form.css' %}" type="text/css">
 {% endblock style %}
 {% block current-page %}Register{% endblock current-page %}
+
 {% if messages %}
     <div class="messages">
         {% for message in messages %}
@@ -17,7 +18,7 @@
 {% block content %}
     <div class="container">
         <div class="margin-container">
-        <h2>Register for HolyHub</h2>
+            <h2>Register for HolyHub</h2>
             <form method="post" class="form">
                 {% csrf_token %}
 
@@ -32,11 +33,25 @@
 
                 <!-- Password1 Field -->
                 <label for="id_password1">{{ form.password1.label }}</label>
-                {{ form.password1 }}
+                <div>
+                    {{ form.password1 }}
+                    <input type="checkbox" onclick="togglePassword('id_password1')" id="show-password1"> Show password
+                </div>
 
                 <!-- Password2 Field -->
                 <label for="id_password2">{{ form.password2.label }}</label>
                 {{ form.password2 }}
+
+                <script>
+                    function togglePassword(fieldId) {
+                        var field = document.getElementById(fieldId);
+                        if (field.type === "password") {
+                            field.type = "text";
+                        } else {
+                            field.type = "password";
+                        }
+                    }
+                </script>
 
                 <!-- First Name Field -->
                 <label for="id_first_name">{{ form.first_name.label }}</label>
@@ -58,7 +73,7 @@
                 <input type="submit" value="Register" class="action">
 
                 <!-- Redirect to Login Link -->
-                <p>Already a member?<a class="blue-link" href="{% url 'Members:login' %}">Login</a></p>
+                <p>Already a member? <a class="blue-link" href="{% url 'Members:login' %}">Login</a></p>
             </form>
         </div>
     </div>

@@ -29,7 +29,21 @@
 
                 <!-- Password Field -->
                 <label for="id_password">{{ form.password.label }}</label>
+            <div>
                 {{ form.password }}
+                <input type="checkbox" onclick="togglePassword('id_password')">Show Password
+            </div>
+
+            <script>
+            function togglePassword(fieldId) {
+                var field = document.getElementById(fieldId);
+                if (field.type === "password") {
+                    field.type = "text";
+                } else {
+                    field.type = "password";
+                }
+            }
+            </script>
 
                 <!-- Submit Button -->
                 <input type="submit" value="Login" class="action">

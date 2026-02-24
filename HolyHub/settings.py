@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_celery_beat',
     'Members',
     'features',
     'events',
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'communication',
     'payments',
     'blog',
+
 
 
 
@@ -119,7 +121,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
+
 
 USE_I18N = True
 
@@ -152,3 +155,16 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'kagurustanley@gmail.com'
 EMAIL_HOST_PASSWORD = 'gboz xuav vefa fqen'
+
+
+
+
+AFRICASTALKING_USERNAME = 'sandbox'  # Replace with your Africa's Talking username
+AFRICASTALKING_API_KEY = 'atsk_cc958b0a711db08bc5c73db4a9f7e24429ad2339007c32f952af3e0d8a52e748f105aeaa'    # Replace with your Africa's Talking API key
+
+# settings.py
+
+# Celery configuration
+CELERY_BROKER_URL = 'redis://localhost:6379/0'  # URL to the Redis server
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'

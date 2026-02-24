@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from .models import PrayerRequest, Sermon,DailyDevotion
 from .forms import PrayerRequestForm
+from django.utils.timezone import now
+
 
 def features_page(request):
     return render(request, 'features_page.html')
@@ -23,8 +25,9 @@ def sermons(request):
     return render(request, 'sermon_page.html', {'sermons': sermons})
 
 def devotions(request):
-    devotions = DailyDevotion.objects.all()
-    return render(request, 'devotions.html', {'devotions': devotions})
+    today =now().date()
+    today_devotion = DailyDevotion.objects.filter(date=today).first()
+    return render(request, 'devotions.html', {'devotion': today_devotion})
 
 def thank_you(request):
     return render(request, 'thank_you.html')

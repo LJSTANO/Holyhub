@@ -1,4 +1,6 @@
 from django import forms
+from django.core.validators import MinLengthValidator
+
 from .models import Member
 from django.contrib.auth.forms import PasswordResetForm, PasswordChangeForm
 from django.contrib.auth.hashers import check_password
@@ -6,7 +8,7 @@ from django.core.exceptions import ValidationError
 
 # Member Registration Form
 class MemberRegistrationForm(forms.ModelForm):
-    password1 = forms.CharField(widget=forms.PasswordInput, required=True, label="Password")
+    password1 = forms.CharField(widget=forms.PasswordInput,required=True,min_length=(8),label="Password")
     password2 = forms.CharField(widget=forms.PasswordInput, required=True, label="Confirm Password")
 
     class Meta:
