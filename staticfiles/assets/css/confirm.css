@@ -1,0 +1,46 @@
+/* Custom CSS for styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* Soft light blue background */
+}
+
+.card {
+    border-radius: 15px; /* Rounded corners for the card */
+    overflow: hidden;
+}
+
+.card-header {
+    background-color:#2196f3; /* Bootstrap primary color */
+    color: #2196f3;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #0056b3;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+}

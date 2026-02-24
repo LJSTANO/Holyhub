@@ -1,0 +1,85 @@
+/* Styles for the body and overall background */
+body {
+    background-color: #dceefb; /* Soft blue background */
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Center and style the main container */
+.container {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    max-width: 800px; /* Constrained width */
+    margin: 50px auto; /* Center the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Title styles */
+h1 {
+    color: #0056b3; /* Strong blue title color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width inside the container */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #0056b3; /* Strong blue for header */
+    color: white; /* White text in the header */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+th,
+td {
+    padding: 12px 15px; /* Comfortable padding for cells */
+    border: 1px solid #e0e0e0; /* Light gray borders */
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for alternating rows */
+}
+
+tbody tr:hover {
+    background-color: #e8f4fd; /* Light blue on hover */
+}
+
+/* Buttons */
+.btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.btn-warning {
+    background-color: #0056b3; /* Orange for edit button */
+    color: white;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #0056b3; /* Darker orange */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Neutral gray for back button */
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Darker gray */
+}

@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc; /* Light background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Section Headers */
+h2, h3 {
+  color: #0056b3; /* Deep blue for headers */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #b3e5fc; /* Lighter blue */
+  padding: 60px 0;
+  text-align: center;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* Contact Info */
+.contact-info .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-info a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #0056b3; /* Darker blue */
+}
+
+/* Contact Form */
+#contact-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+#contact-form h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0056b3;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Map Section */
+#map {
+  background-color: #b3e5fc; /* Lighter blue */
+  padding: 50px 0;
+}
+
+#map iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* FAQ Section */
+#faq ul {
+  list-style: none;
+  padding: 0;
+}
+
+#faq li {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+#faq li strong {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Call to Action */
+#cta {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#cta h3 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+#cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#cta a {
+  background-color: #fff;
+  color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#cta a:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

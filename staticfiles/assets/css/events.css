@@ -1,0 +1,101 @@
+/* Overall page background */
+body {
+    background-color: #e6f7ff; /* Light soft blue */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    color: #005073; /* Deep blue text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the container and give it a white background */
+.container {
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px;
+    background-color: #ffffff; /* Pure white for contrast */
+    border-radius: 15px; /* Smooth, rounded corners */
+    border: 1px solid #dcdcdc; /* Neutral gray border for subtle definition */
+    max-width: 600px;
+}
+
+/* Stylish list-group items */
+.event-item {
+    border: none;
+    background-color: #f9f9f9; /* Light gray for subtle contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #dcdcdc; /* Neutral gray accent */
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+/* Styling for the event details */
+.event-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333; /* Neutral dark gray */
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #555; /* Subtle gray text */
+    margin-bottom: 10px;
+}
+
+.event-date {
+    font-size: 0.9rem;
+    color: #777; /* Medium gray */
+}
+
+/* Button styling */
+button, .btn-primary {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #87ceeb; /* Soft Sky Blue */
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: #4682b4; /* Darker Steel Blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Additional enhancements */
+h1 {
+    color: #005073; /* Deep blue for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #dcdcdc; /* Neutral gray border */
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #005073; /* Deep blue for focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 80, 115, 0.3); /* Subtle blue glow for focus */
+}

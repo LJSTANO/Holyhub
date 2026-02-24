@@ -1,0 +1,94 @@
+/* General Styling */
+body {
+    background-color: #e6f7ff; /* Light sky blue background */
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+    color: #005073; /* Deep blue text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    background-color: #ffffff; /* White background for contrast */
+    border: 2px solid #b3e0ff; /* Soft blue border */
+    border-radius: 15px; /* Slightly rounded corners */
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    max-width: 600px; /* Centered layout */
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #007acc; /* Bright blue for header text */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Buttons Styling */
+button, a.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* Soft rounded buttons */
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+button.btn-success {
+    background-color: #007acc; /* Bright blue */
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s ease;
+}
+
+button.btn-success:hover {
+    background-color: #005073; /* Darker blue on hover */
+}
+
+a.btn-secondary {
+    background-color: #b3e0ff; /* Light blue */
+    color: #005073; /* Deep blue text */
+    transition: background-color 0.3s ease;
+}
+
+a.btn-secondary:hover {
+    background-color: #80cfff; /* Brighter blue on hover */
+    color: #003d5c; /* Darker text */
+}
+
+/* Input and Textarea Styling */
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Input Focus Effect */
+input:focus, textarea:focus, select:focus {
+    border-color: #007acc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5); /* Subtle glow */
+}
+.show-password {
+    margin-left: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.show-password input {
+    margin-right: 5px;
+}
+

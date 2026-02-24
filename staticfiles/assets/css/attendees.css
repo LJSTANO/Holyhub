@@ -1,0 +1,92 @@
+/* Body styling */
+body {
+    background-color: #f0faff; /* Soft blue background for entire page */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Image and Overlay */
+.background-image {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional dark overlay */
+}
+
+/* Styling for the event list and items */
+.list-group-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #dceeff; /* Soft blue background for list items */
+    border: 1px solid #d0d7e0; /* Light border for list items */
+}
+
+.list-group-item:hover {
+    background-color: #c3d9e6; /* Slightly darker soft blue on hover */
+    transition: 0.3s;
+}
+
+/* Event title styling */
+.list-group-item strong {
+    color: #333; /* Darker grey for event title */
+    font-size: 1.1rem;
+}
+
+/* Button styling */
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-info:hover, .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Container and Heading styling */
+.container {
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Soft blue for headings */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .list-group-item {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}

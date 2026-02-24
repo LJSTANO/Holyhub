@@ -1,0 +1,110 @@
+/* General Section Styling */
+.features-section {
+  padding: 80px 0;
+  background-color: #e8f4fc; /* Soft, light blue */
+}
+
+.features-section .react-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.features-section .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0077b6; /* Soft Blue Color */
+  margin-bottom: 10px;
+}
+
+.features-section .sub-text {
+  font-size: 1.2rem;
+  color: #003366; /* Subtle grayish blue */
+}
+
+.features-section .watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: #a1c6ea; /* Light blue watermark */
+  opacity: 0.1;
+}
+
+/* Feature Box Styling */
+.feature-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px); /* Slight hover lift */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+.feature-icon {
+  display: inline-block;
+  width: 60px;  /* Icon size */
+  height: 60px; /* Icon size */
+  background-color: #0077b6; /* Soft blue background */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Icon color */
+  font-size: 30px; /* Icon size */
+  text-align: center;
+  margin-bottom: 20px; /* Spacing between icon and text */
+}
+
+/* Feature Text Styling */
+.feature-text .feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #005f73; /* Darker, clean blue color */
+  margin-bottom: 15px;
+  text-decoration: none; /* Ensure no underline */
+}
+
+/* Remove underline and purple colors from links inside .feature-title */
+.feature-text .feature-title a {
+  color: inherit !important; /* Inherit the title color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s ease-in-out;
+}
+
+.feature-text a:visited {
+  color: inherit !important; /* Prevent purple visited links */
+}
+
+.feature-text p {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Bootstrap Grid Layout for Columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-md-4 {
+  flex: 0 0 30%;
+  margin-bottom: 30px;
+}
+
+/* Remove containers, focus on spacing */
+.feature-box {
+  margin: 10px; /* Add spacing between the boxes */
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 1 1 100%; /* Stack in one column for smaller screens */
+  }
+}

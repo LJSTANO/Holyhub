@@ -1,0 +1,78 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4faff; /* Soft blue background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    color: #2a74b3; /* Soft blue for the heading */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form labels */
+.form-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Form input fields */
+.form-control {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #f8f8f8;
+}
+
+/* Focused input field */
+.form-control:focus {
+    border-color: #2a74b3;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(42, 116, 179, 0.5);
+}
+
+/* Submit button */
+.btn-primary {
+    background-color: #2a74b3;
+    border-color: #2a74b3;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1c5b8b;
+    border-color: #1c5b8b;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,214 @@
+/* Container for the heading */
+.heading-container {
+    background-color: #007bff; /* Blue background */
+    padding: 30px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 50px; /* Space below the heading */
+    display: inline-block; /* Make the container fit the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading Style */
+.heading-container h2 {
+    font-size: 2rem; /* Adjust font size */
+    font-weight: 700; /* Bold text */
+    color: white; /* White text inside blue container */
+    text-align: center; /* Center the heading */
+    margin: 0; /* Remove default margin */
+    position: relative;
+}
+
+.heading-container h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px; /* Align line slightly below */
+    width: 60px; /* Line width */
+    height: 3px; /* Line thickness */
+    background-color: #ffffff; /* White line for contrast */
+}
+
+
+#testimonials {
+    background-color: #e7f5ff; /* Soft blue background color */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-lg-4, .col-lg-6 {
+    flex: 1 1 calc(33.33% - 20px); /* Three equal columns */
+    margin-bottom: 30px;
+    max-width: calc(33.33% - 20px); /* Prevents overflow */
+}
+
+/* Testimonial Item */
+.testimonial-item {
+    background: white;
+    border: 1px solid #007bff; /* Blue border outlining the testimonial card */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.testimonial-item:hover {
+    transform: translateY(-10px); /* Lifts the card */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deepens shadow */
+}
+/* Testimonial Image */
+.testimonial-img {
+    width: 80px; /* Reasonable size for a circular image */
+    height: 80px; /* Matches the width for a perfect circle */
+    border-radius: 50%; /* Ensures the image is circular */
+    margin-bottom: 15px; /* Adjust spacing below the image */
+    border: 3px solid #3498db; /* A soft blue border for consistency */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+
+/* Testimonial Heading */
+.testimonial-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Star Ratings */
+.stars i {
+    color: #ffc107; /* Yellow stars */
+    margin-right: 3px;
+}
+
+/* Testimonial Text */
+.testimonial-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* Quote Icon */
+.quote-icon-left, .quote-icon-right {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .col-lg-4, .col-lg-6 {
+        flex: 1 1 48%; /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-lg-4, .col-lg-6 {
+        flex: 1 1 100%; /* Single column on small screens */
+        margin-bottom: 20px;
+    }
+}
+/* Main container */
+#pricing {
+    background-color: #f0f8ff; /* Soft light blue background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Heading container */
+.heading-container {
+    background-color: #007bff; /* Soft blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+.heading-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Price text */
+.price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #007bff;
+    margin: 20px 0;
+}
+
+/* Button Style */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Grid Layout */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.col-lg-4 {
+    flex: 1 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-lg-4 {
+        flex: 1 1 100%;
+    }
+}
