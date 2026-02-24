@@ -139,10 +139,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # add this
-    # ... other middleware
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # if you are using WhiteNoise
+    'django.contrib.sessions.middleware.SessionMiddleware',   # must be before AuthenticationMiddleware
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware', # must be after SessionMiddleware
+    'django.contrib.messages.middleware.MessageMiddleware',    # must be after AuthenticationMiddleware
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
